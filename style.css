@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap");
+/* font-family: 'Modern Antiqua', cursive; titre */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital@1&display=swap");
+/* font-family: 'Red Hat Text', sans-serif; texte */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap"); */
+/* font-family: 'Red Hat Text', sans-serif; texte italique */
+
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+main {
+  width: 75%;
+  margin: auto;
+  /* background-color: rgb(60, 149, 119); */
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  width: 35%;
+  background-color: #e1d4bb;
+  border-radius: 200px 200px 0px 0px;
+}
+
+.Logo {
+  height: 170px;
+  width: 170px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+img {
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.etiquette {
+  width: 100%;
+  /* margin-right: 10px; */
+  background-color: #cbb279;
+  border-radius: 25px;
+  font-family: "Modern Antiqua", cursive;
+  color: #537188;
+  font-weight: 400;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+.Colonne {
+  display: flex;
+flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.Info {
+  margin-left: 20px;
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.InfoBlue {
+  color: #537188;
+  font-size: 1.2em;
+  margin-left: 30px;
+  font-family: "Modern Antiqua", cursive;
+  font-weight: 600;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+li {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1em;
+}
+
+section{
+    /* background-color: aquamarine; */
+    width: 100%;
+    
+}
+
+article{
+    margin-left: 50px;
+}
+
+h1{
+    font-size: 4em;
+    font-family: "Modern Antiqua", cursive;
+    color: #537188;
+    text-decoration: none;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: "Modern Antiqua", cursive;
+    color: #537188;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.etiquette2 {
+    width: 100%;
+    /* margin-right: 10px; */
+    background-color: #cbb279;
+    border-radius: 25px;
+    font-family: "Modern Antiqua", cursive;
+    color: #537188;
+    font-weight: 400;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 3px 0px;
+  }
+
+  .block{
+    border-left: 3px solid black;
+    padding-left: 15px;
+  }
+
+  .block p{
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  .block h3{
+
+  }
