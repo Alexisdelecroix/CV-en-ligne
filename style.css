@@ -184,7 +184,7 @@ h2 {
   display: none;
 }
 
-.close{
+.close {
   display: none;
 }
 
@@ -217,7 +217,7 @@ h2 {
     left: -310px;
   }
 
-  article{
+  article {
     margin-left: 25px;
   }
 
@@ -234,7 +234,7 @@ h2 {
     background-color: #cbb279;
     margin: 6px 0;
   }
-  .close{
+  .close {
     display: block;
     position: absolute;
     top: 2%;
@@ -242,7 +242,7 @@ h2 {
     height: 50px;
   }
 
-  .fa-solid{
+  .fa-solid {
     color: rgb(0, 0, 0);
   }
 }
