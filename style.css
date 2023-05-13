@@ -7,11 +7,10 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap"); */
 /* font-family: 'Red Hat Text', sans-serif; texte italique */
 
-
-*{
-    /* margin: 0;
+* {
+  /* margin: 0;
     padding: 0; */
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 main {
   width: 75%;
@@ -25,16 +24,35 @@ a {
   color: black;
 }
 
-aside {
-  width: 35%;
+.positionburger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  width: 40%;
   background-color: #e1d4bb;
   border-radius: 200px 200px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: left 1s ease;
+}
+
+.burger-icon {
+  margin-top: 50px;
+}
+
+.burger-icon span {
+  display: none;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 
 .Logo {
-  height: 170px;
-  width: 170px;
-  margin: auto;
+  margin: 10px auto;
   margin-top: 15px;
 }
 
@@ -55,16 +73,17 @@ img {
   font-weight: 400;
   text-align: center;
   padding: 3px 0px;
+  margin-bottom: 0px;
 }
 
 .Colonne {
   display: flex;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   row-gap: 5px;
 }
 
 .Info {
-  margin-left: 10px;
+  margin-left: 5px;
   font-family: "Red Hat Text", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -73,15 +92,17 @@ flex-wrap: wrap;
 .InfoBlue {
   color: #537188;
   font-size: 1.2em;
-  margin-left: 30px;
+  margin-left: 10px;
   font-family: "Modern Antiqua", cursive;
   font-weight: 600;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 0px;
+  padding-right: 10px;
 }
 
 li {
@@ -89,59 +110,139 @@ li {
   font-size: 1em;
 }
 
-section{
-    /* background-color: aquamarine; */
-    width: 100%;
-    
+section {
+  /* background-color: aquamarine; */
+  width: 100%;
 }
 
-article{
-    margin-left: 50px;
+.cercle {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: -6px;
+  bottom: -20px;
 }
 
-h1{
-    font-size: 4em;
-    font-family: "Modern Antiqua", cursive;
-    color: #537188;
-    text-decoration: none;
-    font-weight: 200;
-    margin-bottom: 20px;
-    margin-top: 20px;
+article {
+  margin-left: 50px;
 }
 
-h2{
-    margin-top: 20px;
-    font-size: 3em;
-    font-family: "Modern Antiqua", cursive;
-    color: #537188;
-    text-decoration: none;
-    font-weight: 200;
+h1 {
+  font-size: 3em;
+  font-family: "Modern Antiqua", cursive;
+  color: #537188;
+  text-decoration: none;
+  font-weight: 200;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  font-family: "Modern Antiqua", cursive;
+  color: #537188;
+  text-decoration: none;
+  font-weight: 200;
 }
 
 .etiquette2 {
+  width: 100%;
+  /* margin-right: 10px; */
+  background-color: #cbb279;
+  border-radius: 25px;
+  font-family: "Modern Antiqua", cursive;
+  color: #537188;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+.block {
+  border-left: 3px solid black;
+  padding-left: 15px;
+}
+
+.block p {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.block h3 {
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: bold;
+  color: #537188;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.burger {
+  display: none;
+}
+
+.close{
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+  .aside {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  main {
+    width: 90%;
+  }
+  .aside {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main {
+    width: 90%;
+  }
+  .aside {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -310px;
+  }
+
+  article{
+    margin-left: 25px;
+  }
+
+  .aside.active {
+    left: 0px;
     width: 100%;
-    /* margin-right: 10px; */
+    border-radius: 0;
+    height: 100%;
+  }
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
     background-color: #cbb279;
-    border-radius: 25px;
-    font-family: "Modern Antiqua", cursive;
-    color: #537188;
-    font-weight: 400;
-    font-size: 1.4em;
-    text-align: center;
-    padding: 3px 0px;
+    margin: 6px 0;
+  }
+  .close{
+    display: block;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    height: 50px;
   }
 
-  .block{
-    border-left: 3px solid black;
-    padding-left: 15px;
+  .fa-solid{
+    color: rgb(0, 0, 0);
   }
-
-  .block p{
-    font-family: 'Red Hat Text', sans-serif;
-    padding: 10px;
-    font-size: 1.1em;
-  }
-
-  .block h3{
-
-  }
+}
