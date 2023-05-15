@@ -142,6 +142,7 @@ li {
   border-radius: 50%;
   left: -6px;
   bottom: -20px;
+  z-index: -1;
 }
 
 article {
@@ -221,9 +222,28 @@ h2 {
   position: fixed;
   left: 0px;
   top: 0px;
-  background-color: rgba(0, 0, 0, 0.516);
+  background-color: rgba(0, 0, 0, 0.747);
+  /* filter: blur(1px); */
   width: 100%;
   height: 100%;
+  display: none;
+  z-index: 0;
+  transition: all 2s ease;
+}
+
+.overlay.active{
+display: block;
+transition: all 2s ease;
+}
+.overlayBox{
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 500px;
+ background-color: #cbb279;
+ z-index: 2;
+ transition: all 2s ease;
 }
 
 @media screen and (max-width: 1200px) {
