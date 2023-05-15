@@ -8,3 +8,5 @@ openn.onclick = function openNav() {
 closeBtn.onclick = function closeNav() {
     sidenav.classList.remove("active");
   }
+
+  

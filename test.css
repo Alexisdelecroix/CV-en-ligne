@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    background-color: red;
+    width: 40%;
+    height: 600px;
+ 
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: aqua;
+    height: 300px;
+  
+}
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: beige;
+    height: 500px;
+  
+}
