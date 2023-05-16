@@ -9,7 +9,6 @@ closeBtn.onclick = function closeNav() {
     sidenav.classList.remove("active");
   }
 
-
   
 let detail = document.getElementById("overlay");
 let opennDetail = document.getElementById("openDetail");
