@@ -19,6 +19,10 @@ main {
   display: flex;
 }
 
+body.active {
+  background-color: black;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -50,6 +54,23 @@ a {
   background-color: black;
   margin: 6px 0;
 }
+
+.dark {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 10px;
+}
+
+.dark i {
+  font-size: 30px;
+}
+/* .fa-solid.fa-sun {
+  font-size: 50px;
+}
+
+.fa-solid.fa-sun.dark {
+  color: white;
+} */
 
 .Logo {
   margin: 10px auto;
@@ -242,21 +263,43 @@ h2 {
   left: 20%;
   width: 60%;
   height: 500px;
-  background-color: #cbb279;
+  background-color: #d4cbc2;
   /* z-index: 2; */
   /* -webkit-transition:2s; */
 }
 
-.overlayBox img{
+.overlayBox img {
   height: 100px;
   width: 100px;
 }
 
+.overlayBox {
+  height: 250px;
+}
 
+.overlayBox h3 {
+  color: #537188;
+  font-size: 1.5em;
+  font-family: "Modern Antiqua", cursive;
+}
 
-.overlayBox h1{
-  /* transition-duration: 5s;
-  transition-delay: 10s; */
+.overlayBox .PositionPassion {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+
+.PositionPassion i {
+  font-size: 1.5em;
+  color: #537188;
+}
+
+.overlayBox p {
+  margin: 0px;
+  padding: 15px;
+  font-size: 1em;
+  font-family: "Red Hat Text", sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
@@ -325,6 +368,7 @@ h2 {
     width: 100%;
     border-radius: 0;
     min-height: 100vh;
+    padding-bottom: 40px;
   }
   .burger-icon span {
     display: block;
@@ -341,7 +385,67 @@ h2 {
     height: 50px;
   }
 
-  .closeDetail i{
+  .closeDetail i {
     cursor: pointer;
+  }
+
+  .overlayBox {
+    height: 420px;
+  }
+
+  .overlayBox h3 {
+    color: #537188;
+    font-size: 1.5em;
+    font-family: "Modern Antiqua", cursive;
+  }
+
+  .overlayBox .PositionPassion {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+  }
+
+  .PositionPassion i {
+    font-size: 1.5em;
+    color: #537188;
+  }
+
+  .overlayBox p {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1em;
+    font-family: "Red Hat Text", sans-serif;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .overlayBox {
+    height: 450px;
+  }
+
+  .overlayBox h3 {
+    color: #537188;
+    font-size: 1.5em;
+    font-family: "Modern Antiqua", cursive;
+  }
+
+  .overlayBox .PositionPassion {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+  }
+
+  .PositionPassion i {
+    font-size: 1.5em;
+    color: #537188;
+  }
+
+  .overlayBox p {
+    margin: 0px;
+    padding: 15px;
+    font-size: 1em;
+    font-family: "Red Hat Text", sans-serif;
   }
 }
