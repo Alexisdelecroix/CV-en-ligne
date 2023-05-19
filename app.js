@@ -10,6 +10,8 @@ closeBtn.onclick = function closeNav() {
     sidenav.classList.remove("active");
   }
 
+
+
 // Ouverture et fermeture de la Popup
 let detail = document.getElementById("overlay");
 let opennDetail = document.getElementById("openDetail");
@@ -24,20 +26,23 @@ closeeDetail.onclick = function closeNav() {
 
 
 
+
+
+  
 // Mode Dark
-// let modeMoon = document.getElementById("moon");
-// let modeSun = document.getElementById("sun");
-// let corpsDePage = document.getElementById("corps");
+let modeMoon = document.getElementById("moon");
+let modeSun = document.getElementById("sun");
+let corpsDePage = document.getElementById("corps");
 
 
-// modeMoon.onclick = function moon() {
-//   corpsDePage.classList.add("active");
-//   modeSun.classList.add("dark");
-// }
+modeMoon.onclick = function moon() {
+  corpsDePage.classList.add("active");
+  modeSun.classList.add("dark");
+}
 
-// modeSun.onclick = function sun() {
-//   corpsDePage.classList.remove("active");
-// }
+modeSun.onclick = function sun() {
+  corpsDePage.classList.remove("active");
+}
 
 
   
