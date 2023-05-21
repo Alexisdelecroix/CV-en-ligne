@@ -26,27 +26,37 @@ closeeDetail.onclick = function closeNav() {
 let modeMoon = document.getElementById("moon");
 let modeSun = document.getElementById("sun");
 let corpsDePage = document.getElementById("corps");
-
-// Paragraphe
 let para = document.getElementsByTagName("p");
+let prenom = document.getElementsByTagName("h1");
+let titreDeveloppeur = document.getElementsByTagName("h2");
 let titre = document.getElementsByTagName("h3");
 let titrewhite = document.getElementsByTagName("h3");
 let intru = document.getElementById("intru");
+let sousTitreBleu = document.getElementsByTagName("h4");
 
 modeMoon.onclick = function moon() {
   corpsDePage.classList.add("active");
   modeSun.classList.add("dark");
   intru.classList.add("titreDark");
-  // Si le mode lune est active alors tu met tous les paragraphes en blanc
   for (let i = 0; i < para.length; i++) {
     para[i].style.color = "white";
   }
-  for (let i = 0; i < para.length; i++) {
+  for (let i = 0; i < titre.length; i++) {
     titre[i].style.color = "black";
   }
 
-  for (let i = 0; i < para.length; i++) {
+  for (let i = 0; i < titrewhite.length; i++) {
     titrewhite[i].style.background = "white";
+  }
+  for (let i = 0; i < sousTitreBleu.length; i++) {
+    sousTitreBleu[i].style.color = "#65BAFB";
+  }
+
+  for (let i = 0; i < prenom.length; i++) {
+    prenom[i].style.color = "#65BAFB";
+  }
+  for (let i = 0; i < titreDeveloppeur.length; i++) {
+    titreDeveloppeur[i].style.color = "#65BAFB";
   }
 };
 
@@ -57,10 +67,21 @@ modeSun.onclick = function sun() {
   for (let i = 0; i < para.length; i++) {
     para[i].style.color = "black";
   }
-  for (let i = 0; i < para.length; i++) {
+  for (let i = 0; i < titre.length; i++) {
     titre[i].style.color = "#537188";
   }
-  for (let i = 0; i < para.length; i++) {
+  for (let i = 0; i < titrewhite.length; i++) {
     titrewhite[i].style.background = "#cbb279";
+  }
+
+  for (let i = 0; i < sousTitreBleu.length; i++) {
+    sousTitreBleu[i].style.color = "#537188";
+  }
+
+  for (let i = 0; i < prenom.length; i++) {
+    prenom[i].style.color = "#537188";
+  }
+  for (let i = 0; i < titreDeveloppeur.length; i++) {
+    titreDeveloppeur[i].style.color = "#537188";
   }
 };
