@@ -64,18 +64,18 @@ a {
 .dark i {
   font-size: 30px;
 }
- /* .fa-solid.fa-sun {
+/* .fa-solid.fa-sun {
   font-size: 50px;
 } */
 
-.fa-solid.fa-sun{
+.fa-solid.fa-sun {
   display: none;
-} 
+}
 
 .fa-solid.fa-sun.dark {
-  color: #CBB279;
+  color: #cbb279;
   display: block;
-} 
+}
 
 .Logo {
   margin: 10px auto;
@@ -207,7 +207,7 @@ h2 {
   padding: 3px 0px;
 }
 
-.etiquette2.titreDark{
+.etiquette2.titreDark {
   background-color: white;
   color: black;
 }
@@ -224,6 +224,10 @@ h2 {
   color: #537188d2;
   cursor: pointer;
   margin-bottom: 5px;
+}
+
+.detail.active {
+  color: #65bafb;
 }
 
 .block p {
@@ -279,6 +283,10 @@ h2 {
   /* -webkit-transition:2s; */
 }
 
+.overlayBox.active {
+  background-color: black;
+}
+
 .overlayBox img {
   height: 100px;
   width: 100px;
@@ -312,12 +320,14 @@ h2 {
   font-size: 1em;
   font-family: "Red Hat Text", sans-serif;
 }
+
+.intru {
+  color: #65bafb;
+}
 /* 
 p .text-white{
 color: white;
 } */
-
-
 
 @media screen and (max-width: 1200px) {
   main {
