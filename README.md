@@ -12,6 +12,12 @@ J'ai besoin de votre CV en version numérique que je pourrais consulter sur mon 
   <img src="Images/maquette3.png" alt="Photo de mon cv version ordinateur" height="250px" >
   </div>
   
+  ## Performances de mon cv en ligne
+  
+  <div align="center">
+  <img src="Images/performanceOrdinateur.png" alt="Photo des performances ordinateur"  height="250px" >
+  <img src="Images/performanceMobile.png" alt="Photo des performances mobile" height="250px" >
+  </div>
   
 ## Mon objectif: 
 
