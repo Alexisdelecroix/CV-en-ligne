@@ -7,7 +7,7 @@ Je cherche à recruter un développeur web pour différents projets.
 J'ai besoin de votre CV en version numérique que je pourrais consulter sur mon PC mais aussi sur tablette et mobile pour le montrer à mon directeur.
 
 <div align="center"> 
-  <img src="images/maquette1.png" alt="Photo de mon cv version ordinateur" height="250px" >
+  <img src="Images/maquette1.png" alt="Photo de mon cv version ordinateur" height="250px" >
   </div>
 ## Mon objectif: 
 
