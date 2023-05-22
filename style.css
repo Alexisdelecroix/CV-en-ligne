@@ -21,6 +21,7 @@ main {
 
 body.active {
   background-color: black;
+  transition:1s;
 }
 
 a {
@@ -40,7 +41,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: left 1s ease;
+  transition: left1s ease;
 }
 
 .burger-icon {
@@ -205,16 +206,19 @@ h2 {
   font-size: 1.4em;
   text-align: center;
   padding: 3px 0px;
+  transition:1s;
 }
 
 .etiquette2.titreDark {
   background-color: white;
   color: black;
+  transition:1s;
 }
 
 .block {
   border-left: 3px solid black;
   padding-left: 15px;
+  transition:1s;
 }
 
 .detail {
@@ -228,12 +232,14 @@ h2 {
 
 .detail.active {
   color: #65bafb;
+  transition:1s;
 }
 
 .block p {
   font-family: "Red Hat Text", sans-serif;
   font-size: 1em;
   margin-top: 5px;
+  transition:1s;
 }
 
 .block h4 {
@@ -270,7 +276,7 @@ h2 {
 .overlay.active {
   opacity: 1;
   z-index: 0;
-  transition: opacity 1s ease-in;
+  transition: opacity1s ease-in;
 }
 .overlayBox {
   position: fixed;
