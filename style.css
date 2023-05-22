@@ -276,7 +276,7 @@ h2 {
 .overlay.active {
   opacity: 1;
   z-index: 0;
-  transition: opacity1s ease-in;
+  transition: opacity 1s ease-in;
 }
 .overlayBox {
   position: fixed;
