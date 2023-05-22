@@ -364,6 +364,11 @@ color: white;
     margin: 0 auto;
     margin-top: 10px;
   }
+
+  .Logo img{
+    height: 100px;
+    width: 100px;
+  }
   aside img {
     height: 110px;
     width: 110px;
