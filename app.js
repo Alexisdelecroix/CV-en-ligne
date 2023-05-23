@@ -45,7 +45,7 @@ let sousTitreBleu = document.getElementsByTagName("h4");
 let cercle = document.getElementsByClassName("cercle");
 let line = document.getElementsByClassName("block");
 let overlayBox = document.getElementById("overlayBox");
-
+let blockPrincipal = document.getElementById("blockPrincipal")
 
 modeMoon.onclick = function moon() {
   corpsDePage.classList.add("active");
@@ -116,3 +116,23 @@ modeSun.onclick = function sun() {
     line[i].style.borderLeft = "3px solid black";
   }
 };
+
+window.addEventListener('load', () => {
+
+  const TL = gsap.timeline({paused: true});
+
+  TL
+  // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
+  .staggerFrom(sidenav, 1, { opacity: 0, ease: "power1.in"}, 0.3)
+  .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
+  .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(modeMoon, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(modeSun, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(openn, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  
+  TL.play();
+})
+
+
+
