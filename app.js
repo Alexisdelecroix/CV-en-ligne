@@ -3,12 +3,26 @@ let sidenav = document.getElementById("myAside");
 let openn = document.getElementById("open");
 let closeBtn = document.getElementById("closeBtn");
 
-openn.onclick = function openNav() {
+// openn.onclick = function openNav() {
+//   sidenav.classList.add("active");
+// };
+// closeBtn.onclick = function closeNav() {
+//   sidenav.classList.remove("active");
+// };
+
+
+// Méthode AddEventListener
+openn.addEventListener("click", myFunction);
+closeBtn.addEventListener("click", myFunction2);
+
+function myFunction() {
   sidenav.classList.add("active");
-};
-closeBtn.onclick = function closeNav() {
+}
+
+function myFunction2() {
   sidenav.classList.remove("active");
-};
+}
+
 
 // Ouverture et fermeture de la Popup
 let detail = document.getElementById("overlay");
