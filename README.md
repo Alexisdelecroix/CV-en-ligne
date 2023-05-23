@@ -37,7 +37,7 @@ J'ai besoin de votre CV en version numérique que je pourrais consulter sur mon 
 <li>Aside sur le côté en format tablette, et mobile</li>
 <li>Mode Dark disponible pour l'utilisateur</li>
 <li>Création du popup pour plus de détail</li>
-<li>Cv mis en ligne grâce en github pages</li>
+<li>Cv mis en ligne grâce a github pages</li>
 </ul>
 
 ### Resources utlisées: 
