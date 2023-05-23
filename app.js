@@ -13,16 +13,11 @@ let closeBtn = document.getElementById("closeBtn");
 
 // Méthode AddEventListener
 openn.addEventListener("click", myFunction);
-closeBtn.addEventListener("click", myFunction2);
+closeBtn.addEventListener("click", myFunction);
 
 function myFunction() {
-  sidenav.classList.add("active");
+  sidenav.classList.toggle("active");
 }
-
-function myFunction2() {
-  sidenav.classList.remove("active");
-}
-
 
 // Ouverture et fermeture de la Popup
 let detail = document.getElementById("overlay");
@@ -50,6 +45,7 @@ let sousTitreBleu = document.getElementsByTagName("h4");
 let cercle = document.getElementsByClassName("cercle");
 let line = document.getElementsByClassName("block");
 let overlayBox = document.getElementById("overlayBox");
+
 
 modeMoon.onclick = function moon() {
   corpsDePage.classList.add("active");
