@@ -1,3 +1,22 @@
+window.addEventListener('load', () => {
+
+  const TL = gsap.timeline({paused: true});
+
+  TL
+  // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
+  .staggerFrom(sidenav, 1.3, { opacity: 0, ease: "power1.in"}, 0.3)
+  .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
+  .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  // .staggerFrom(block1, 0.7, { opacity: 0, ease: "power2.out"}, 0.4)
+  // .staggerFrom(etiquette, 0.8, { opacity: 0, ease: "power2.out"}, 0.5)
+  .from(modeMoon, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(modeSun, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(openn, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  
+  TL.play();
+})
+
 // Ouverture et fermeture de l'aside
 let sidenav = document.getElementById("myAside");
 let openn = document.getElementById("open");
@@ -10,11 +29,9 @@ let closeBtn = document.getElementById("closeBtn");
 //   sidenav.classList.remove("active");
 // };
 
-
 // Méthode AddEventListener
 openn.addEventListener("click", myFunction);
 closeBtn.addEventListener("click", myFunction);
-
 function myFunction() {
   sidenav.classList.toggle("active");
 }
@@ -46,6 +63,8 @@ let cercle = document.getElementsByClassName("cercle");
 let line = document.getElementsByClassName("block");
 let overlayBox = document.getElementById("overlayBox");
 let blockPrincipal = document.getElementById("blockPrincipal")
+// let block1 = document.getElementById("block1")
+// let etiquette = document.getElementById("etiquette1")
 
 modeMoon.onclick = function moon() {
   corpsDePage.classList.add("active");
@@ -117,22 +136,6 @@ modeSun.onclick = function sun() {
   }
 };
 
-window.addEventListener('load', () => {
-
-  const TL = gsap.timeline({paused: true});
-
-  TL
-  // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
-  .staggerFrom(sidenav, 1, { opacity: 0, ease: "power1.in"}, 0.3)
-  .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
-  .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .from(modeMoon, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .from(modeSun, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .from(openn, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  
-  TL.play();
-})
 
 
 

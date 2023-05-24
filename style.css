@@ -40,8 +40,15 @@ a {
   border-radius: 200px 200px 0px 0px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* transition: left 1s ease; */
+  row-gap: 30px;
+}
+
+.blockJs{
+  display: flex;
+  margin-top: 15px;
+  column-gap: 15px;
 }
 
 .burger-icon {
@@ -63,7 +70,7 @@ a {
 }
 
 .dark i {
-  font-size: 30px;
+  font-size: 32px;
 }
 /* .fa-solid.fa-sun {
   font-size: 50px;
@@ -367,7 +374,7 @@ color: white;
     left: -365px;
     border-radius: 0px 0px 0px 0px;
     height: 100%;
-    transition: 1s;
+    transition: 1.8s;
   }
 
   .Logo {
@@ -389,13 +396,15 @@ color: white;
     color: #537188;
   }
 
-  li {
-    font-size: 0.9em;
-  }
+
 
   ul {
     margin: auto;
     /* margin-bottom: 20px; */
+  }
+
+  li {
+    font-size: 0.8em;
   }
   article {
     margin-left: 15px;
