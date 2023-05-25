@@ -127,7 +127,7 @@ window.addEventListener('load', () => {
   const TL = gsap.timeline({paused: true});
   TL
   // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
-  // .staggerFrom(sidenav, 1.3, { opacity: 0, ease: "power1.in"}, 0.3)
+  .staggerFrom(sidenav, 1.3, { opacity: 0, ease: "power1.in"}, 0.3)
   .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
   .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
   .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
