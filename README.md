@@ -37,6 +37,8 @@ J'ai besoin de votre CV en version numérique que je pourrais consulter sur mon 
 <li>Aside sur le côté en format tablette, et mobile</li>
 <li>Mode Dark disponible pour l'utilisateur</li>
 <li>Création du popup pour plus de détail</li>
+<li>Création d'un accordéon</li>
+<li>Création d'une animation au chargement de la page</li>
 <li>Cv mis en ligne grâce a github pages</li>
 </ul>
 
@@ -46,7 +48,9 @@ J'ai besoin de votre CV en version numérique que je pourrais consulter sur mon 
 <li>Font awesome pour les icones</li>
 <li>Figma pour la maquette et Wireframe</li>
 <li>GoogleFonts pour les polices</li>
+<li>Librairies GSAP</li>
 <li>Github</li>
+
 </ul>
 
 ### Langages Utilisés
