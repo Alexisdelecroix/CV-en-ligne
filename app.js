@@ -1,21 +1,7 @@
-window.addEventListener('load', () => {
-
-  const TL = gsap.timeline({paused: true});
-
-  TL
-  // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
-  .staggerFrom(sidenav, 1.3, { opacity: 0, ease: "power1.in"}, 0.3)
-  .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
-  .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  // .staggerFrom(block1, 0.7, { opacity: 0, ease: "power2.out"}, 0.4)
-  // .staggerFrom(etiquette, 0.8, { opacity: 0, ease: "power2.out"}, 0.5)
-  .from(modeMoon, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .from(modeSun, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  .from(openn, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-  
-  TL.play();
-})
+function toggleAccordeon(id) {
+  let accorActive = document.getElementById(id);
+  accorActive.classList.toggle("active");
+}
 
 // Ouverture et fermeture de l'aside
 let sidenav = document.getElementById("myAside");
@@ -137,5 +123,20 @@ modeSun.onclick = function sun() {
 };
 
 
+window.addEventListener('load', () => {
+  const TL = gsap.timeline({paused: true});
+  TL
+  // .staggerFrom(sidenav, durée de l'animation, {top: 0, opacity: 0, ease: "power1.in"}, delay entre les animations (staggerFrom))
+  // .staggerFrom(sidenav, 1.3, { opacity: 0, ease: "power1.in"}, 0.3)
+  .staggerFrom(prenom, 0.6, {left: -50, opacity: 0, ease: "power2.in"}, 0.3, '-=1')
+  .staggerFrom(titreDeveloppeur, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .staggerFrom(blockPrincipal, 0.6, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  // .staggerFrom(block1, 0.7, { opacity: 0, ease: "power2.out"}, 0.4)
+  // .staggerFrom(etiquette, 0.8, { opacity: 0, ease: "power2.out"}, 0.5)
+  .from(modeMoon, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(modeSun, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  .from(openn, 1.5, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
+  TL.play();
+})
 
 
