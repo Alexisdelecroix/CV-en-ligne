@@ -234,6 +234,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+#intru{
+  margin-top: 22.4px;
+}
+
 /* .accordeon{
 visibility: hidden;
 opacity: 0;
@@ -258,7 +262,7 @@ transition: visibily 0s, opacity 1s ease-in;
 } */
 
 .accordeon1, .accordeon2, .accordeon3, .accordeon4{
-  margin-top: 8px;
+  margin-top: 25px;
   position: relative;
   left: 95%;
   color: #537188;
@@ -302,7 +306,7 @@ font-family: "Red Hat Text", sans-serif;
   justify-content: flex-end;
   color: #537188d2;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin: 5px 0px;
 }
 
 .detail.active {
