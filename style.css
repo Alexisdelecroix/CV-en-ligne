@@ -42,7 +42,7 @@ a {
   flex-direction: column;
   /* justify-content: space-between; */
   /* transition: left 1s ease; */
-  row-gap: 30px;
+  row-gap: 0.5rem;
 }
 
 .blockJs {
