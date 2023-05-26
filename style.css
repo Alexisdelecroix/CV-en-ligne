@@ -545,7 +545,7 @@ color: white;
 
 @media screen and (max-width: 451px) {
   .overlayBox {
-    height: 450px;
+    height: 500px;
   }
 
   .overlayBox h3 {
