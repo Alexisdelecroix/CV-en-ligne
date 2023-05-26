@@ -40,6 +40,7 @@ a {
   border-radius: 200px 200px 0px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   /* justify-content: space-between; */
   /* transition: left 1s ease; */
   row-gap: 0.8rem;
