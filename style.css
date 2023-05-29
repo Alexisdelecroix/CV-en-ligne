@@ -46,6 +46,11 @@ a {
   row-gap: 0.8rem;
 }
 
+#size{
+  font-size: 1.5em;
+  color: #537188;
+}
+
 .blockJs {
   display: flex;
   margin-top: 15px;
@@ -73,9 +78,7 @@ a {
 .dark i {
   font-size: 32px;
 }
-/* .fa-solid.fa-sun {
-  font-size: 50px;
-} */
+
 
 .fa-solid.fa-sun {
   display: none;
@@ -111,11 +114,10 @@ a {
 
 .etiquette {
   width: 100%;
-  /* margin-right: 10px; */
   background-color: #cbb279;
   border-radius: 25px;
   font-family: "Modern Antiqua", cursive;
-  color: black;
+  color: #537188;
   font-weight: 400;
   text-align: center;
   padding: 2px 0px;
@@ -166,7 +168,6 @@ li {
 }
 
 .principal {
-  /* background-color: aquamarine; */
   width: 100%;
 }
 
@@ -206,11 +207,10 @@ h2 {
 
 .etiquette2 {
   width: 100%;
-  /* margin-right: 10px; */
   background-color: #cbb279;
   border-radius: 25px;
   font-family: "Modern Antiqua", cursive;
-  color: black;
+  color: #537188;
   font-weight: 400;
   font-size: 1.4em;
   text-align: center;
@@ -345,13 +345,10 @@ font-family: "Red Hat Text", sans-serif;
   background-color: rgba(0, 0, 0, 0.747);
   width: 100%;
   height: 100%;
-  /* display: none; */
   z-index: -1;
-  /* -webkit-transition:2s; */
   opacity: 0;
   transition: opacity 1.2s ease-in;
   transition: z-index 1.2s ease-in;
-  /* transition: 1.3s; */
 }
 
 .overlay.active {
@@ -412,10 +409,6 @@ font-family: "Red Hat Text", sans-serif;
 .intru {
   color: #65bafb;
 }
-/* 
-p .text-white{
-color: white;
-} */
 
 @media screen and (max-width: 1200px) {
   main {
@@ -472,7 +465,6 @@ color: white;
 
   ul {
     margin: auto;
-    /* margin-bottom: 20px; */
   }
 
   li {
@@ -490,7 +482,7 @@ color: white;
     left: 0px;
     width: 100%;
     border-radius: 0;
-    min-height: 100vh;
+    max-height: 100vh;
     padding-bottom: 40px;
     column-gap: 0.5em;
   }
